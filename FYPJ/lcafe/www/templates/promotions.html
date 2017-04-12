@@ -1,0 +1,22 @@
+<ion-view class="promo-page has-footer-buttons" view-title="Promotions">
+  <ion-nav-title class="dark">Promotions</ion-nav-title>
+
+  <ion-content class="light-bg" scroll="false">
+
+
+
+
+
+    <ion-slides options="options" slider="data.slider">
+      <ion-slide-page ng-repeat="item in list">
+        <img ng-src="http://172.20.129.181/LCafe_Menu_Images/{{item.promoImg}}" alt="{{promoDesc}}" style="height:100%;width:100%;" />
+      </ion-slide-page>
+      <ion-slide-page ng-if="hasPromo(list.length)">
+        <img ng-src="img/nopromo.png" style="height:100%;width:100%;"/>
+      </ion-slide-page>
+    </ion-slides>
+
+
+  </ion-content>
+
+</ion-view>

@@ -1,0 +1,45 @@
+<ion-view view-title="Feedback">
+  <ion-nav-title class="dark">Feedback</ion-nav-title>
+  <ion-content class="light-bg">
+    <div class="list">
+
+      <form name="feedback" novalidate>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Subject</span>
+          <input type="text" name="subject" placeholder="Enter a subject" ng-model="fb.subject" required>
+        </label>
+
+        <label class="item item-input item-stacked-label" ng-class="{ 'has_error' : feedback.name.$invalid && !feedback.name.$pristine }">
+          <span class="input-label">Name</span>
+          <input type="text" name="name" placeholder="Enter your name" ng-model="fb.name" required pattern="[a-zA-Z]+">
+          <p style="color:red" ng-show="feedback.name.$invalid && !feedback.name.$pristine">Enter a correct name*</p>
+        </label>
+
+
+        <label class="item item-input item-stacked-label" ng-class="{ 'has_error' : feedback.email.$invalid && !feedback.email.$pristine }">
+          <span class="input-label">Email</span>
+          <input type="email" name="email" placeholder="Enter your email" ng-model="fb.email" required>
+          <p style="color:red" ng-show="feedback.email.$invalid && !feedback.email.$pristine">Enter a valid email*</p>
+        </label>
+
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label item-stacked-label">Comments</span>
+          <textarea placeholder="Enter your comments" name="comment" ng-model="fb.comment" required></textarea>
+        </label>
+
+        <span class="item item-input item-stacked-label">
+          <span class="input-label">Service</span>
+          <rating ng-model="rating.service" max="rating.max"></rating>
+        </span>
+
+        <span class="item item-input item-stacked-label">
+          <span class="input-label">Food</span>
+          <rating ng-model="rating.food" max="rating.max"></rating>
+        </span>
+
+        <button class="button button-block button-royal" ng-disabled="feedback.$invalid" ng-click="save(feedback)">Submit</button>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

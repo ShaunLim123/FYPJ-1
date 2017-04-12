@@ -1,0 +1,29 @@
+<ion-view view-title="Favourite">
+  <ion-nav-title class="dark">Favourite</ion-nav-title>
+  <ion-content class="light-bg">
+    <ion-refresher
+        pulling-text="Pull to refresh..."
+        on-refresh="doRefresh()">
+      </ion-refresher>
+    <ion-list>
+
+
+        <div class="row item" ng-repeat="item in items" ng-init="init(item.itemID,$index)">
+          <div class="col col-25" ui-sref="item({id: item.itemID})" style="height:5.45em;width:5.45em;">
+              <img ng-src="http://172.20.129.181/LCafe_Menu_Images/{{ item.itemImg }}" alt="" style="height:100%; width:100%;"/>
+          </div>
+          <div class="col col-60 col-top item-text-wrap" ui-sref="item({id: item.itemID})">
+            <span class="fFont2">{{ item.itemName }}</span>
+            <p class="fFont0">${{ item.itemPrice | number : 2}}</p>
+          </div>
+          <div class="col col-15 col-center">
+            <a ng-if="checkFav(item.itemID)" class="ion-android-favorite fFont1" ng-click="setFavFalse(item.itemID,$index)"></a>
+            <a ng-if="!checkFav(item.itemID)" class="ion-android-favorite-outline fFont1" ng-click="setFavTrue(item.itemID,$index)"></a>
+          </div>
+        </div>
+
+
+    </ion-list>
+
+  </ion-content>
+</ion-view>

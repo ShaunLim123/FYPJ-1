@@ -1,0 +1,14 @@
+{
+  "name": "lcafe",
+  "app_id": "",
+  "v2": false,
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}

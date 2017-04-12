@@ -1,0 +1,66 @@
+<ion-view view-title="Cart">
+  <ion-nav-title class="dark">Cart</ion-nav-title>
+  <ion-content>
+
+    <ion-list>
+      <ion-item class="item-thumbnail-left card" id="cart-card" ng-repeat="item in cart.items">
+        <img ng-src="http://172.20.129.181/LCafe_Menu_Images/{{ item.itemImg }}" alt=""/>
+        <h2>{{ item.itemName }}</h2>
+        <div>
+          <h2 class="price pull-left royal">
+            ${{ item.itemPrice | number : 2}}
+            <span class="dark">x
+              {{ item.quantity }}</span>
+          </h2>
+          <div ng-disabled="item.quantity == item.itemQty" class="pull-right button button-royal button-card button-qty" ng-click="plusQty(item)">
+            <i class="ion-plus"></i>
+          </div>
+          <div ng-disabled="item.quantity < 2" class="pull-right button button-royal button-card button-qty" ng-click="minusQty(item)">
+            <i class="ion-minus"></i>
+          </div>
+        </div>
+
+        <ion-option-button class="assertive-bg" ng-click="remove(item.itemID)">
+          <i class="icon ion-trash-a padding light"></i>
+        </ion-option-button>
+      </ion-item>
+
+      <ion-item class="card" id="cart-bottom-card" ng-show="!cartEmpty()">
+        <span class="list">
+
+          <span class="item">
+            Total:
+              <span class="pull-right">${{cart.orderTotalPrice}}</span>
+          </span>
+
+          <span class="item" ng-if="cart.discount > 0">
+            Discount:
+              <span class="pull-right">${{cart.discount}}</span>
+            </br>
+              <div ng-repeat="message in cart.comboMessage" style="font-size:0.75em;font-weight:700;">- {{message}}</div>
+          </span>
+
+          <span class="item">
+            GST:
+              <span class="pull-right">${{cart.GST}}</span>
+          </span>
+
+          <span class="item">
+            <b>Grand Total:<span class="pull-right">${{cart.grandTotal}}</span>
+            </b>
+          </span>
+
+        </span>
+      </ion-item>
+    </ion-list>
+
+    </ion-content>
+
+    <ion-footer-bar>
+      <div class="row item-button-group">
+        <button class="col button button-royal" ng-if="!cartEmpty()" ng-click="submitOrder()">Check Out</button>
+        <button class="col button button-royal" ng-if="cartEmpty()" ui-sref='app.food'>Your cart is empty</button>
+      </div>
+    </ion-footer-bar>
+
+  </ion-view>

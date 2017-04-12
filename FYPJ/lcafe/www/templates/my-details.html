@@ -1,0 +1,40 @@
+<ion-view class="has-footer-buttons" view-title="My Account">
+  <ion-nav-title class="dark">My Account</ion-nav-title>
+  <ion-content class="light-bg">
+    <div class="login-content">
+      <form novalidate name="mydetails">
+        <!-- User infomation -->
+        <ion-list>
+          <ion-item class="item-divider">
+            General
+          </ion-item>
+
+          <ion-item class="item-input">
+            <span class="input-label adFont0">Name</span>
+            <span class="adFont1">{{details.custFullName}}</span>
+          </ion-item>
+
+          <ion-item class="item-input">
+            <span class="input-label adFont0">Phone</span>
+            <span class="adFont1" >{{details.custPhoneNumber}}</span>
+          </ion-item>
+
+          <ion-item class="item-input">
+            <span class="input-label adFont0">Email</span>
+            <span class="adFont1">{{details.custEmail}}</span>
+          </ion-item>
+
+          <ion-item class="item-divider">
+            Settings
+          </ion-item>
+
+          <ion-item class="item-input">
+            <span class="input-label adFont0">Password</span>
+            <span class="positive" ng-click="openModal()">Change Password</span>
+          </ion-item>
+
+        </ion-list>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

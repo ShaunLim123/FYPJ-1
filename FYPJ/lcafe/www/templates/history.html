@@ -1,0 +1,18 @@
+<ion-view view-title="History">
+  <ion-nav-title class="dark">History</ion-nav-title>
+  <ion-content class="light-bg">
+
+    <ion-list>
+
+      <ion-item class="item-avatar" ng-repeat="order in orders | orderBy:'-orderID'" ui-sref="order-details({id: order.orderID})">
+        <img ng-if="order.orderType == 'Dine-In'" ng-src="img/DineIn.jpg" />
+        <img ng-if="order.orderType == 'Pre-Order'" ng-src="img/Preorder.jpg" />
+        <p class="hFont0"><b>Invoice No: {{ order.InvoiceNo }}</b></p>
+        <p class="pull-left hFont1"><b><span am-time-Ago="order.orderDateTime"></span></b></p>
+        <p class="ordAmt pull-right hFont2">${{ order.grandTotal | number : 2}}</p>
+      </ion-item>
+
+    </ion-list>
+
+  </ion-content>
+</ion-view>

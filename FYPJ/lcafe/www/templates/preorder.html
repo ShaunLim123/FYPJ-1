@@ -1,0 +1,23 @@
+<ion-view view-title="Pre-order">
+  <ion-nav-title class="dark">Pre-order</ion-nav-title>
+  <ion-content class="light-bg checkout-page">
+    <div class="list card">
+
+      <img src="img/cart.jpg" style="width:50%;margin-left:auto;margin-right:auto;display: block;">
+      <div class="item item-body">
+        <h2>Instructions</h2>
+        <p>Select Your Date & Time Below.</p>
+      </div>
+
+    <div class="item" ion-datetime-picker monday-first am-pm minute-step="5" only-valid="{'after': 'today', 'inclusive': true}" ng-model="preorder.value">
+      <i class="icon ion-ios-calendar royal"></i> Date & Time: {{preorder.value| date: "dd-MM-yyyy h:mm a"}}
+    </div>
+
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar-royal">
+    <div class="row item-button-group">
+      <button class="col button button-royal" ng-click="continue()">Continue</button>
+    </div>
+  </ion-footer-bar>
+</ion-view>

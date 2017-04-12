@@ -1,0 +1,45 @@
+<ion-view hide-back-button="true" class="login-bg" view-title="Login">
+  <ion-nav-title class="dark">Login</ion-nav-title>
+  <ion-content class="light-bg">
+
+    <div class="login-content">
+
+      <!-- Logo -->
+      <div class="padding text-center">
+        <div class="logo">
+          <img ng-src="img/lcafeLogo.png" style="height:100%;width:50%;display:block;margin:auto;"/>
+        </div>
+      </div>
+
+      <!-- Login form -->
+      <form novalidate name="loginForm">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+          <span class="input-label" name='email'>Email</span>
+          <input type="email" ng-model="loginInfo.email" required>
+        </label>
+          <label class="item item-input item-stacked-label">
+          <span class="input-label">Password</span>
+          <input type="password" name="password" ng-model="loginInfo.password"  required>
+        </label>
+        </div>
+
+        <p class="text-right royal">Forgot Password?</p>
+
+          <button class="button button-block button-royal" ng-disabled="loginForm.$invalid" ng-click="login(loginInfo,loginForm)">
+          SIGN IN
+        </button>
+      </form>
+
+      <p class="text-center royal">Or</p>
+
+
+      <!-- Other links -->
+      <div class="text-center">
+        <a ui-sref="register" class="royal">New here? Sign up</span></a>
+      </div>
+
+      </div>
+
+  </ion-content>
+</ion-view>

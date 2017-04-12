@@ -1,0 +1,38 @@
+<ion-view view-title="Payment">
+  <ion-nav-title class="dark">Payment</ion-nav-title>
+  <ion-content class="light-bg checkout-page">
+    <img src="img/enets-logo.jpg" style="display: block; width: 80%; height: auto; margin-left: auto; margin-right: auto;padding-top:20px;"></img>
+
+    <form novalidate name="payment">
+      <label class="item item-input">
+                <span class="input-label">Reference No.</span>
+<!--                 <input type="text" ng-model="paymentForm.reference" placeholder="CC843154841254" readonly/> -->
+                <span>{{paymentForm.reference}}</span>
+              </label>
+
+      <label class="item item-input">
+                <span class="input-label">Identifier No.</span>
+<!--                 <input type="text" ng-model="paymentForm.identifier" placeholder="CC6541564531641321" readonly> -->
+                <span>{{paymentForm.identifier}}</span>
+              </label>
+
+      <label class="item item-input">
+                <span class="input-label">Name</span>
+                <input type="text" ng-model="paymentForm.name" name='name' required placeholder="John Doe">
+              </label>
+      <p style="color:red;padding-left:20px;margin:1px" ng-show="payment.name.$untouched && payment.name.$invalid">*Please enter your name </p>
+
+      <label class="item item-input">
+                <span class="input-label">Amount</span>
+<!--                 <input type="text" ng-model="paymentForm.amount" placeholder="$5" readonly> -->
+                <span>{{paymentForm.amount}}</span>
+              </label>
+    </form>
+  </ion-content>
+
+  <ion-footer-bar class="bar-royal">
+    <div class="row item-button-group">
+      <button class="col button button-royal" ng-click="pay()">Make Payment</button>
+    </div>
+  </ion-footer-bar>
+</ion-view>

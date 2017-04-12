@@ -1,0 +1,34 @@
+<ion-view hide-back-button="true" view-title="Menu">
+  <ion-nav-title class="dark">Menu</ion-nav-title>
+  <ion-content class="light-bg">
+
+    <div class="list list-inset">
+      <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search" ng-model="searchText">
+  </label>
+    </div>
+    <div class="list no-padding">
+      <div class="item item-menu" ng-repeat="item in foodMenu | filter:searchText | filter:customFilter | orderBy:sort.value" ui-sref="app.foodItem({id: item.itemID})">
+        <img ng-src="http://172.20.129.181/LCafe_Menu_Images/{{ item.itemImg }}" err-src="http://placehold.it/350x250" alt="{{ item.name }}" />
+
+
+        <div class="overlay">
+          <span class="pull-left royal">
+                <b>{{ item.itemName }}</b>
+              </span>
+          <span class="pull-right royal">${{ item.itemPrice | number : 2 }}</span>
+          <span ng-if="item.itemQty==0" class="pull-left price assertive"><b>&nbsp Out of Stock!</b></span>
+        </div>
+
+
+      </div>
+    </div>
+  </ion-content>
+
+  <ion-floating-menu bottom="60px">
+    <ion-floating-item icon="ion-funnel" text="Filter" ng-click="openFilterModal()"></ion-floating-item>
+    <ion-floating-item icon="ion-android-options" text="Sort" ng-click="openSortModal()"></ion-floating-item>
+  </ion-floating-menu>
+
+</ion-view>

@@ -1,0 +1,78 @@
+<ion-view class="login-bg" view-title="Sign Up">
+  <ion-nav-title class="dark">Sign Up</ion-nav-title>
+  <ion-content class="light-bg">
+
+    <div class="login-content">
+
+      <!-- Logo -->
+      <div class="padding text-center">
+        <div class="logo">
+          <img ng-src="img/lcafeLogo.png" style="height:100%;width:50%;display:block;margin:auto;"/>
+        </div>
+      </div>
+
+      <!-- Login form -->
+      <form novalidate name="register">
+
+        <div class="list">
+
+          <!-- Name -->
+          <label class="item item-input item-stacked-label" ng-class="{ 'has_error' : register.name.$invalid && !register.name.$pristine }">
+                 <span class="input-label">Name</span>
+                 <input type="text"  name="name" ng-model="Account.fullname" class="form_control" required pattern="[a-z A-Z]+">
+                  <span class="form-error" ng-show="register.name.$invalid && !register.name.$pristine" class="help-block">Enter a correct name*</span>
+               </label>
+
+          <!-- Email -->
+          <label class="item item-input item-stacked-label" ng-class="{ 'has_error' : register.email.$invalid && !register.email.$pristine }">
+                    <span class="input-label">E mail</span>
+                    <input type="email" name="email" ng-model="Account.email" class="form_control" required>
+                    <span class="form-error" ng-show="!register.email.$pristine && register.email.$invalid" class="help-block">Enter a valid email*</span>
+                  </label>
+
+          <!-- Contact No -->
+          <label class="item item-input item-stacked-label" ng-class="{ 'has_error' : (register.phone.$invalid && !register.phone.$pristine)}">
+                      <span class="input-label">Contact No.</span>
+                      <input type="tel" ng-model="Account.phoneNumber" name="phone" class="form_control" ng-minlength="8" ng-maxlength="8" ng-pattern="/^[0-9]+$/" required>
+                      <span class="form-error" ng-show="register.phone.$invalid && !register.phone.$pristine && !register.phone.$error.validPhone && !register.phone.$error.pattern" class="help-block">Enter 8-digit phone number*</span>
+                      <span class="form-error" ng-show="register.phone.$error.pattern" class="help-block">Only numbers are allowed*</span>
+                    </label>
+
+          <!-- Password  -->
+
+          <label class="item item-input item-stacked-label" ng-class="{ 'has_error' : register.password.$invalid && !register.password.$pristine }">
+              <span class="input-label">Password</span>
+              <input type="password" name="password" ng-model="Account.password" ng-minlength="5" ng-pattern="/(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z])/" required>
+              <span class="form-error" ng-show="!register.password.$pristine && register.password.$invalid && !register.password.$error.minlength && !register.password.$error.pattern" class="help-block">Your password is required*</span>
+              <span class="form-error" ng-show="register.password.$error.minlength" class="help-block">Your password is too short.</span>
+              <span class="form-error" ng-show="register.password.$error.pattern && !register.password.$error.minlength" class="help-block">1 lower, upper, numeric character*</span>
+            </label>
+
+          <!-- Confirm Password  -->
+          <label class="item item-input item-stacked-label" ng-class="{ 'has_error' : (register.confirm_password.$invalid && !register.confirm_password.$pristine) || match_password }">
+              <span class="input-label">Confirm Password</span>
+              <input type="password" name="confirm_password" ng-model-options="{ debounce: 500 }" ng-model="Account.confirm_password" confirm-password="Account.password" required>
+              <span class="form-error" ng-show="register.confirm_password.$invalid && !register.confirm_password.$pristine && !register.confirm_password.$error.confirmPassword" class="help-block">You must confirm your password*</span>
+              <span class="form-error" ng-show="register.confirm_password.$error.confirmPassword" class="help-block">Your password does not match*</span>
+            </label>
+
+
+        </div>
+
+        <div class="padding-top">
+          <button class="button button-block button-royal" ng-disabled="register.$invalid" ng-click="createAcc(Account,register)">
+          SIGN UP
+        </button>
+        </div>
+
+      </form>
+
+
+      <!-- Other links -->
+      <div class="text-center">
+        <a ui-sref="login" class="royal">I have an account</span></a>
+      </div>
+</div>
+
+  </ion-content>
+</ion-view>

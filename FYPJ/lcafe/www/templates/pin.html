@@ -1,0 +1,36 @@
+<ion-modal-view>
+
+  <ion-header-bar class="bar bar-header bar-royal">
+    <h1 class="title">Thank You</h1>
+    <button class="button button-clear " ng-click="closeModal()">Close</button>
+  </ion-header-bar>
+
+  <ion-content class="light-bg">
+    <div class="row center">
+      <div class="col ">
+        <h3 class="middleText pFont0">Your order is currently in process.</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-offset-33">
+          <img ng-src="img/success.png" style="width:50%;height:100%;"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3 class="middleText pFont2">Your PIN Number</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h1 class="middlePin"><span class="fail">{{ pin }}</span></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col ">
+        <h3 class="middleText pFont1">The PIN will be used for order collection</h3>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-modal-view>

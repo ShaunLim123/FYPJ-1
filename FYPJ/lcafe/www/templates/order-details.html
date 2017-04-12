@@ -1,0 +1,109 @@
+<ion-view view-title="Order Details">
+  <ion-nav-title class="dark">Order Details</ion-nav-title>
+  <ion-content class="light-bg">
+
+    <ion-list>
+      <ion-item class="topPortion">
+        <!-- OrderID and GrandTotal -->
+        <div class="row topHead">
+          <div class="col head-left">
+            Invoice No:
+          </div>
+          <div class="col head-right">
+            {{InvoiceNo}}
+          </div>
+        </div>
+
+        <!-- Dine-In -->
+        <div class="row topFoot" ng-if="orderType == 'Dine-In'">
+          <div class="col foot-left">
+            Order Pin:
+          </div>
+          <div class="col foot-right">
+            {{PIN}}
+          </div>
+        </div>
+        <div class="row topFoot" ng-if="orderType == 'Dine-In'">
+          <div class="col foot-left">
+            Table Number:
+          </div>
+          <div class="col foot-right">
+            {{tableNumber}}
+          </div>
+        </div>
+
+        <!-- Pre-Order -->
+        <div class="row topFoot" ng-if="orderType == 'Pre-Order'">
+          <div class="col foot-left">
+            Pre-Order DateTime:
+          </div>
+          <div class="col foot-right">
+            {{preorderDateTime}}
+          </div>
+        </div>
+
+        <!-- Ordered on -->
+        <div class="row topFoot">
+          <div class="col foot-left">
+            Ordered On:
+          </div>
+          <div class="col foot-right">
+            {{orderDateTime}}
+          </div>
+        </div>
+      </ion-item>
+
+      <ion-item class="item-divider centerPortion">Item Purchased</ion-item>
+
+      <ion-item class="bottomPortion">
+        <div class="iFont2">
+          <div class="row">
+            <div class="col col-60">Item Name</div>
+            <div class="col col-20">Qty</div>
+            <div class="col col-20">Price</div>
+          </div>
+        </div>
+
+        <div class="iFont1">
+          <div class="row" ng-repeat="item in items">
+            <div class="col col-60">{{item.itemName}}</div>
+            <div class="col col-20">{{item.itemQty}}</div>
+            <div class="col col-20">${{item.itemPrice}}</div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="iFont2">
+          <div class="row">
+            <div class="col col-80 iFont0">Total</div>
+            <div class="col col-20 iFont1">${{ordTotal}}</div>
+          </div>
+
+          <div class="row">
+            <div class="col col-80 iFont0">Discount</div>
+            <div class="col col-20 iFont1">${{ordDiscount}}</div>
+          </div>
+
+          <div class="row">
+            <div class="col col-80 iFont0">GST</div>
+            <div class="col col-20 iFont1">${{ordGST}}</div>
+          </div>
+          <hr>
+          <div class="row iFont2-0">
+            <div class="col col-80">Grand Total</div>
+            <div class="col col-20">${{ordGrandTotal}}</div>
+          </div>
+        </div>
+
+
+      </ion-item>
+
+
+
+
+
+    </ion-list>
+
+  </ion-content>
+</ion-view>

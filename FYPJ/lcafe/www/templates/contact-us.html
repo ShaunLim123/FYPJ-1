@@ -1,0 +1,20 @@
+<ion-view view-title="Contact Us">
+  <ion-nav-title class="dark">Contact Us</ion-nav-title>
+  <ion-content class="light-bg">
+    <div class="padding">
+      <h3 class="royal">Map</h3>
+      <div id="map" data-tap-disabled="true" ng-init="init()"></div>
+      <h3 class="royal">Get in touch</h3>
+      <div class="list card">
+        <a href="tel:64514384" class="item item-icon-left"> <i class="icon ion-ios-telephone"></i> Call us </a>
+        <a href="mailto:L-Rez@mymail.nyp.edu.sg" class="item item-icon-left"> <i class="icon ion-email"></i> Send us and Email</a>
+      </div>
+      <h3 class="royal">Get social with us</h3>
+      <div class="list card">
+        <a class="item item-icon-left" ng-click="openLink('https://www.facebook.com')"> <i class="icon ion-social-facebook"></i> Visit us on Facebook </a>
+        <a class="item item-icon-left" ng-click="openLink('https://www.instagram.com')"> <i class="icon ion-social-instagram-outline"></i> Follow us on Instagram </a>
+        <a class="item item-icon-left" ng-click="openLink('https://www.twitter.com')"> <i class="icon ion-social-twitter"></i> Follow us on Twitter </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

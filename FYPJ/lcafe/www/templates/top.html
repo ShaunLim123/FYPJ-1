@@ -1,0 +1,23 @@
+<ion-view view-title="Top 10">
+  <ion-nav-title class="dark">Top 10</ion-nav-title>
+  <ion-content class="light-bg">
+
+    <ion-list>
+
+
+      <ion-item class="item-thumbnail-left card item-text-wrap" ng-repeat="item in items" ui-sref="item({id: item.itemID})">
+
+        <img ng-src="http://172.20.129.181/LCafe_Menu_Images/{{ item.itemImg }}" alt="" />
+        <div class="tTop">
+          <span class="royal tFont0">{{item.number}}</span>
+          <span class="tFont1"> {{ item.itemName }}</span>
+        </div>
+        <div class="tBottom">
+          <span class="price royal tFont2">${{ item.itemPrice | number : 2}}</span>
+        </div>
+      </ion-item>
+
+    </ion-list>
+
+  </ion-content>
+</ion-view>

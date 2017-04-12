@@ -1,0 +1,21 @@
+<ion-view view-title="Dine In">
+  <ion-nav-title class="dark">Dine In</ion-nav-title>
+  <ion-content class="light-bg checkout-page">
+    <div class="list card">
+
+      <div class="item item-body">
+        <h2>Instructions</h2>
+        <p>1. Hold your device over a QR Code so that it’s clearly visible within your smartphone’s screen.</p>
+        <p>2. When you correctly hold your smartphone over a QR Code, the phone automatically scans the code.</p>
+        <img src="img/scan.jpg" style="width:100%">
+      </div>
+
+    </div>
+  </ion-content>
+
+  <div class="row item-button-group" style="position:absolute;bottom:0;width:100%;">
+    <div class="col button button-royal" ng-click="scan()" >Scan Table QR Code</div>
+    <div class="col button button-stable" ng-click="enterTableNum()">Enter Table Number</div>
+  </div>
+
+</ion-view>

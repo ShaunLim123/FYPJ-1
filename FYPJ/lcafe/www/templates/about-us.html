@@ -1,0 +1,37 @@
+<ion-view view-title="About Us">
+  <ion-nav-title class="dark">About Us</ion-nav-title>
+  <ion-content class="light-bg">
+    <div class="padding">
+
+      <h3 class="royal">L'Cafe</h3>
+      <p class="dark">A Nanyang Polytechnic Teaching Enterprise Project Centre set up to provide hands-on training for students from the Diploma in Food & Beverage Business. </p>
+
+      <h3 class="royal">Our Location</h1>
+      <p class="dark">180 Ang Mo Kio Avenue 8, 569830</p>
+
+
+      <h3 class="royal">Status</h3>
+      <p class="dark" ng-show="status == 'Open'" style="font-size:20px;">L'Cafe is <span class="success"><b>Open</b></span> Now.</p>
+      <p class="dark" ng-show="status == 'Closed'" style="font-size:20px;">L'Cafe is <span class="fail"><b>Close</b></span> Now.</p>
+      <p class="dark" ng-show="status == 'ClosingSoon'" style="font-size:20px;">L'Cafe is <span class="success"><b>Closing soon</b></span> Now.</p>
+
+      <h3 class="royal" ng-show="todayRemark != ''">Today's Remarks</h3>
+      <p class="dark" ng-show="todayRemark != ''" style="font-size:20px;"> "{{todayRemark}}"</p>
+
+      <h3 class="royal">Opening hours</h3>
+
+      <div class="list list-inset">
+        <label class="item item-input item-stacked-label" ng-repeat="cafeInfo in cafeInfos">
+          <span class="input-label dark">{{ cafeInfo.day }}</span>
+          <span class="data">{{ cafeInfo.openinghours }} - {{ cafeInfo.closinghours }}</span>
+            <!-- <p class="dark" ng-show="todayRemark != '' && todayDay==cafeInfo.day"><b >Remarks: </b>  {{todayRemark}}.</p> -->
+        </label>
+        <label class="item item-input item-stacked-label">
+        <span class="input-label dark">Weekends and public holidays</span>
+        <span class="data">Closed</span>
+        </label>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

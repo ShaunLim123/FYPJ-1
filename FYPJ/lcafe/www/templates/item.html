@@ -1,0 +1,71 @@
+<ion-view view-title="{{ item.itemName }}">
+  <ion-nav-title class="dark">{{ item.itemName }}</ion-nav-title>
+  <ion-content class="light-bg">
+    <!-- Item cover -->
+    <div class="item-cover">
+      <img class="full-image" ng-src="http://172.20.129.181/LCafe_Menu_Images/{{ item.itemImg }}" err-src="http://placehold.it/250x250" alt="" />
+      <div class="fav">
+        <a ng-if="!isFavourite && menuState=='login'" class="ion-android-favorite-outline fFont1" ng-click="setFavTrue(item.itemID)"></a>
+        <a ng-if="isFavourite && menuState=='login'" class="ion-android-favorite fFont1" ng-click="setFavFalse(item.itemID)"></a>
+      </div>
+      <div class="overlay">
+        <span class="pull-left royal">
+          <b>{{ item.itemDesc }}</b>
+        </span>
+        <span ng-if="item.itemQty>0" class="pull-right price royal">
+          ${{ item.itemPrice }}
+        </span>
+        <span ng-if="item.itemQty==0" class="pull-right price assertive">
+          <b>Out of Stock!</b>
+        </span>
+      </div>
+    </div>
+    <ion-list>
+      <ion-item class="item-divider">
+        Quanity
+      </ion-item>
+      <ion-item>
+        <div class="quantityRow row">
+          <div class="col">
+            <span ng-disabled="input.quantity < 2" class="pull-left button button-royal button-card button-qty" ng-click="minusQty(item)">
+          <i class="ion-minus"></i>
+        </span>
+          </div>
+
+          <div class="col col-50" id="center-div">
+            <span class="button-card">
+          <b>{{ input.quantity }}</b>
+        </span>
+          </div>
+
+          <div class="col">
+            <span ng-disabled="input.quantity == item.itemQty" class="pull-right button button-royal button-card button-qty" ng-click="plusQty(item)">
+          <i class="ion-plus"></i>
+        </span>
+          </div>
+        </div>
+      </ion-item>
+      <div ng-hide="item.itemRequest == 'None'">
+        <ion-item class="item-divider">
+          Item Request
+        </ion-item>
+        <ion-checkbox ng-disabled="item.itemQty==0" class="item-checkbox-right checkbox-royal" value="item.itemRequest" ng-model="request.item">{{ item.itemRequest }}</ion-checkbox>
+      </div>
+
+      <ion-item class="item-divider">
+        Special Request
+      </ion-item>
+      <div class="padding">
+        <textarea class="taFont0" ng-disabled="item.itemQty==0" style="width:100%" ng-model="request.special" placeholder="Enter your special request here" ></textarea>
+      </div>
+
+    </ion-list>
+    <!-- Buttons -->
+    <div class="row item-button-group">
+      <div ng-disabled="item.itemQty==0" class="col button button-royal" ng-click="addCart()">
+        <i class="text-2x ion-android-cart"></i>
+        <span class="text-sm">ADD TO CART</span>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

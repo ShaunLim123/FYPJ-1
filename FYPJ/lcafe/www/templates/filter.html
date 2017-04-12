@@ -1,0 +1,19 @@
+<ion-modal-view style="bottom: 0; min-height: initial;top: initial;height: 40%;">
+
+  <ion-header-bar class="bar bar-header bar-royal">
+    <h1 class="title" style="font-size:1.1em;font-weight:400;">Filter By </h1>
+    <button class="button button-clear " ng-click="closeFilterModal()" style="font-size:1.1em;font-weight:700;">Apply</button>
+  </ion-header-bar>
+
+  <ion-content class="light-bg">
+
+    <ion-list>
+
+      <ion-checkbox ng-repeat="item in filterItems"  ng-change="changeItem(item)" ng-model="item.checked" ng-checked="item.checked" >
+        {{ item.text }}
+      </ion-checkbox>
+
+    </ion-list>
+  </ion-content>
+
+</ion-modal-view>
