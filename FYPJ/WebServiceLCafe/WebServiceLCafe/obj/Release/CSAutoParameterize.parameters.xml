@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="myConnectionString-Web.config Connection String" description="myConnectionString Connection String used in web.config by the application to access the database." defaultValue="server=CITIKIOSK;database=lcafeDB;uid=lcafeadmin;password=lcafeP@55;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\L30608\\Desktop\\CD-CLIVE\\Source\ Codes\\WebServiceLCafe\\WebServiceLCafe\\WebServiceLCafe\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='myConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="lcafeDBEntities-Web.config Connection String" description="lcafeDBEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/CafeEDM.csdl|res://*/CafeEDM.ssdl|res://*/CafeEDM.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=172.20.132.87;initial catalog=lcafeDB;user id=lcafeadmin;password=lcafeP@55;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\L30608\\Desktop\\CD-CLIVE\\Source\ Codes\\WebServiceLCafe\\WebServiceLCafe\\WebServiceLCafe\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='lcafeDBEntities']/@connectionString" />
+  </parameter>
+</parameters>

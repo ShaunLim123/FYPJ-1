@@ -1,0 +1,12 @@
+﻿<parameters>
+  <parameter name="IIS Web Application Name" defaultValue="WebServiceLCafe" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\L30608\\Desktop\\WebServiceLCafe\\WebServiceLCafe\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\L30608\\Desktop\\WebServiceLCafe\\WebServiceLCafe\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="lcafeDBEntities-Web.config Connection String" defaultValue="metadata=res://*/CafeEDM.csdl|res://*/CafeEDM.ssdl|res://*/CafeEDM.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=172.20.132.87;initial catalog=lcafeDB;user id=lcafeadmin;password=lcafeP@55;MultipleActiveResultSets=True;App=EntityFramework&quot;">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\L30608\\Desktop\\WebServiceLCafe\\WebServiceLCafe\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='lcafeDBEntities']/@connectionString" />
+  </parameter>
+  <parameter name="myConnectionString-Web.config Connection String" defaultValue="server=CITIKIOSK;database=lcafeDB;uid=lcafeadmin;password=lcafeP@55;">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\L30608\\Desktop\\WebServiceLCafe\\WebServiceLCafe\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='myConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

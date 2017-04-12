@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="WebServiceLCafe1" />
+  <setParameter name="lcafeDBEntities-Web.config Connection String" value="metadata=res://*/CafeEDM.csdl|res://*/CafeEDM.ssdl|res://*/CafeEDM.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=172.20.132.87;initial catalog=lcafeDB;user id=lcafeadmin;password=lcafeP@55;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+  <setParameter name="myConnectionString-Web.config Connection String" value="server=CITIKIOSK;database=lcafeDB;uid=lcafeadmin;password=lcafeP@55;" />
+</parameters>

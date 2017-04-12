@@ -1,0 +1,66 @@
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\csc.exe
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\vbc.exe
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\VBCSCompiler.exe
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\WebServiceLCafe.dll.config
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\WebServiceLCafe.dll
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\WebServiceLCafe.pdb
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\Newtonsoft.Json.dll
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\bin\Newtonsoft.Json.xml
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\obj\Debug\WebServiceLCafe.dll
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\obj\Debug\WebServiceLCafe.pdb
+C:\Users\L30608\Desktop\WebServiceLCafe\WebServiceLCafe\obj\Debug\WebServiceLCafe.csprojResolveAssemblyReference.cache
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\csc.exe
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\vbc.exe
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\VBCSCompiler.exe
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\WebServiceLCafe.dll.config
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\WebServiceLCafe.dll
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\WebServiceLCafe.pdb
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\Newtonsoft.Json.dll
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\Newtonsoft.Json.xml
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\obj\Debug\WebServiceLCafe.csprojResolveAssemblyReference.cache
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\obj\Debug\WebServiceLCafe.dll
+C:\Users\L30607\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\obj\Debug\WebServiceLCafe.pdb
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\csc.exe
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\vbc.exe
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\VBCSCompiler.exe
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\WebServiceLCafe.dll.config
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\WebServiceLCafe.dll
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\WebServiceLCafe.pdb
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\Newtonsoft.Json.dll
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\bin\Newtonsoft.Json.xml
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\obj\Debug\WebServiceLCafe.csprojResolveAssemblyReference.cache
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\obj\Debug\WebServiceLCafe.dll
+C:\Users\L30608\Desktop\CD-CLIVE\Source Codes\WebServiceLCafe\WebServiceLCafe\WebServiceLCafe\obj\Debug\WebServiceLCafe.pdb
